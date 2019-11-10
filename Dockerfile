@@ -7,4 +7,4 @@ WORKDIR /app
 ADD . /app
 
 RUN conda env create -f environment.yml
-CMD /bin/bash -c "source activate myenv && mlflow server --host 0.0.0.0"
+CMD /bin/bash -c "source activate myenv && mlflow server --host 0.0.0.0 --port $PORT"
