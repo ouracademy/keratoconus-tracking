@@ -3,3 +3,4 @@ channels:
   - conda-forge
 dependencies:
   - mlflow
+  - psycopg2 # For postgresql in sqlalchemy
